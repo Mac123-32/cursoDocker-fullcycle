@@ -6,7 +6,5 @@ WORKDIR /home/node/app
 
 CMD ["tail","-f", "/dev/null"]
 
-# Para build da imagem use docker build -t <nome da imagem .>
-# Faça a pesquisa depois que a sua imagem for criada com docker image ls | grep <nome>
-# Inicie com docker run -d <nome>
-# Para ver ela use o comando docker exec -it <id> /bin/bash
+#Vamos iniciar de uma forma diferente agora colocando volume na aplicação
+#docker run -d -v $(pwd):/home/node/app <nome>
